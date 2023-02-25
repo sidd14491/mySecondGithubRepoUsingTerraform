@@ -46,11 +46,17 @@
         Commonly refered to as AZURE
 ## Benefits of cloud computing
 1) Cost-Effective:
-    You **pay for what you come**
-    2) Global
-    3) Secure
-    4) Reliable
-    5) Scalable
-    6) Elastic
-    7) Current
+    You **pay for what you come**, no up-front cost.Pay-as-you-go(PAYG) thoushands of customers sharing the cost of the resources
+2) Global
+    Launch workloads **anywhere in the world**,Just choose a region
+3) Secure
+    Cloud providers take care of physical security.**Cloud services can by secure by default** or you have the ability to configure access down to granualr level
+4) Reliable:
+    data backup,disaster recovery, and data replication and fault tolerence
+5) Scalable:
+    Increase or decrease resoruces and services based on demand
+6) Elastic:
+    Automate scaling during spike and drop in demand
+7) Current:
+    The underlying hardware and managed software is patched,upgraded and replaced by the cloud provider without interruption to you
 
