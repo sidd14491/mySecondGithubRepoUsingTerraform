@@ -73,4 +73,20 @@
         Don't worry about IT staff,data centres and hardware
         example:AZURE,AWS,GCP,Oracle cloud etc.
 
+## Types of Cloud Computing Responsbilities:
+            On-Premise          Iaas                Paas                Saas
+
+           Applications       Applications          Applications       *Applications*       
+           Data               Data                  Data               *Data*
+           Runtime            Runtime               Runtime            *Runtime*
+           Middleware         Middleware            *Middleware*       *Middleware*
+           OS                 OS                    *OS*               *OS*
+           virtualization     *virtualization*      *virtualization*   *virtualization*    
+           Servers            *Servers*             *Servers*          *Servers*
+           Networking         *Networking*          *Networking*       *Networking*
+           Storage            *Storage*             *Storage*          *Storage*
+
+           Note: Customer Responsible: without asterik(*)
+                 CSP(Cloud service provider): with asterik(*)
+
 
