@@ -46,7 +46,7 @@
         Commonly refered to as AZURE
 ## Benefits of cloud computing
     1) Cost-Effective:
-        You **pay for what you come**
+ You **pay for what you come**
     2) Global
     3) Secure
     4) Reliable
