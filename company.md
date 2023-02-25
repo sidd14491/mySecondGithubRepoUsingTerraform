@@ -28,7 +28,8 @@ Call from
     27  SLK software --> 20LPA --> 
     28  Talentica Software -->
     29  IG group --> 25LPA
-    30  
+    30  InfoGain --> Interview done
+    31  HERE
 
     Team member handling
 
@@ -36,7 +37,10 @@ Call from
 
 Terraform interview question
 1) What is difference between for and for each
-2) Where we can store tfstate file
+    For is a expression 
+    For each is a meta-argument
+    meta-argument can control Terraform behaviour when creating, destorying or replacing resources
+2) Where we can store tfstate file --> in public cloud bucket
 3) Component in terraform
 4) difference between var and locals
 5) How and where we can define multiple port in terraform
@@ -48,3 +52,11 @@ K8s:
         on particular node?
     2) K8s component
     3) 
+
+CI/CD
+    CI --> 
+         Source code should be
+         Github --> unitTest --> Maven/graddle 
+         Jenkins --> to make build ,fluxOperator
+         Integrate Github with Jenkins
+    CD --> Continous deployment/develops
