@@ -73,7 +73,7 @@
         Don't worry about IT staff,data centres and hardware
         example:AZURE,AWS,GCP,Oracle cloud etc.
 
-## Types of Cloud Computing Responsbilities:
+## Types of Cloud Computing Responsbilites :
             On-Premise          Iaas                Paas                Saas
 
            Applications       Applications          Applications       *Applications*       
@@ -89,4 +89,48 @@
            Note: Customer Responsible: without asterik(*)
                  CSP(Cloud service provider): with asterik(*)
 
+## Azure Deployment Model:
+    1) Public Cloud:
+        Everything build on the cloud Provider 
+        Also knowns as :Cloud Native
+            ====================================
+            |  <--> vnet                       |
+            |                                  |   
+            |   publicSbnt          privateSbnt|
+            |      appvm               dbvm    |
+            |==================================|   
+   
+    2) Private Cloud:     
+         Everything built on company datacenters
+         Also known as On-Premis
+         The cloud could be openStacks    
+             ==================================
+            |  <--> openstack                  |
+            |                                  |   
+            |   publicSbnt          privateSbnt|
+            |      appvm               dbvm    |
+            |==================================|                   
+    3) Hybrid cloud:
+        Using both On-Premise and Cloud Service Provider
+         ====================================
+            |  <--> vnet                       |
+            |                                  |   
+            |   publicSbnt          privateSbnt|
+            |      appvm               dbvm    |
+            |==================================|  
+                            |
+                        Express Route  (It's make connectivity between private and public)
+                            |
+              ==================================
+            |  <--> openstack                  |
+            |                                  |   
+            |   publicSbnt          privateSbnt|
+            |      appvm               dbvm    |
+            |==================================|  
 
+    4) Cross Cloud aka mutli-cloud
+        Using Multiple Cloud providers   
+
+        =============               ============             ============
+        | Amazon EKS |  <---------->| Azure Arc | <--------->|  GKE     |
+        |============               ============             ============
