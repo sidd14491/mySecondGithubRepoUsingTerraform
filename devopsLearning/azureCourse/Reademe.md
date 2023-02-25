@@ -47,9 +47,9 @@
 ## Benefits of cloud computing
 1) Cost-Effective:
     You **pay for what you come**, no up-front cost.Pay-as-you-go(PAYG) thoushands of customers sharing the cost of the resources
-2) Global
+2) Global:
     Launch workloads **anywhere in the world**,Just choose a region
-3) Secure
+3) Secure:
     Cloud providers take care of physical security.**Cloud services can by secure by default** or you have the ability to configure access down to granualr level
 4) Reliable:
     data backup,disaster recovery, and data replication and fault tolerence
@@ -59,4 +59,18 @@
     Automate scaling during spike and drop in demand
 7) Current:
     The underlying hardware and managed software is patched,upgraded and replaced by the cloud provider without interruption to you
+
+## Types of Cloud computing
+    1) SaaS(Software as a Service) For Customers
+        A product that is run and managed by a service provider.Don't worry about how the service is maintained.It just works and remain avialable
+        example: salesforce,gmail,office360 etc.
+    2) PaaS(Platform as a Service)  For developers
+        Focus on the deployment and management of your apps/Don't worry about
+        provisioning,configuring or understanding the hardware or OS
+        example: googple App engine,horkou,EKS aks etc
+    3) IaaS(Infrastructure as a service) For Admins
+        The basic building blocks for cloud IT.Provide access to networking feautres,computer and data storage space.
+        Don't worry about IT staff,data centres and hardware
+        example:AZURE,AWS,GCP,Oracle cloud etc.
+
 
