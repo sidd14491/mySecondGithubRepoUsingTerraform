@@ -12,4 +12,4 @@
                                             service and code,someone else take care of the rest
     
     ## Trends towards cloud computing from pyhsical 
-        1) **Dedicated Server**
+        **Dedicated Server**
