@@ -149,5 +149,5 @@
      g) Maintainence
 
    **Note**:
-         1) As part of cost-saving CSP(OPEX) is 75% cheaper than on-premise(CAPEX)
-         2) From point "c" to "g"  taken care by  CSP in case OPEX
+        1) As part of cost-saving CSP(OPEX) is 75% cheaper than on-premise(CAPEX)
+        2) From point "c" to "g"  taken care by  CSP in case OPEX
