@@ -45,4 +45,12 @@
         Microsof Azure
         Commonly refered to as AZURE
 ## Benefits of cloud computing
+    1) Cost-Effective:
+        You **pay for what you come**
+    2) Global
+    3) Secure
+    4) Reliable
+    5) Scalable
+    6) Elastic
+    7) Current
 
