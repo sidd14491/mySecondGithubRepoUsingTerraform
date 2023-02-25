@@ -134,3 +134,19 @@
         =============               ============             ============
         | Amazon EKS |  <---------->| Azure Arc | <--------->|  GKE     |
         |============               ============             ============
+
+
+## Total cost ownership(TCO)
+    Capex                                                        Opex
+    On-premise                                                    CSP
+  Following responsbilites take as part of on-premise           Following responsbilites take as part of CSP
+  a) Implementation                                                  a) Implementation
+  b) configuring                                                     b) configuring
+  c) Training                                                        c) Training
+  d) Physical security                                            
+  e) Hardware
+  f) IT professional
+  g) Maintainence
+
+  **Note**: As part of cost-saving CSP(OPEX) is 75% cheaper than on-premise(CAPEX)
+          From point "c" to "g"  taken care by  CSP in case OPEX
