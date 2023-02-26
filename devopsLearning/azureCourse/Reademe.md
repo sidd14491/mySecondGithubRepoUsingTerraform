@@ -208,3 +208,36 @@
         Note:
             Running your workload across multiple Availablitiy Zones(AZ) ensure that if 1 or 2
             AZs become unavailble your service / applications remains available
+    
+    b) High Scalability:
+        Your ability to increase your capacity based on the increasing demand of traffic,
+        memory and computing power
+         
+        There are two types of scalibility:
+            a) Vertical Scaling(Scaling up):
+                upgrade to bigger server means increase memory,cpu etc
+            b) Horizontal Scaling(Scaling out):
+                Add more server of the same size
+    c) High Elasiticty
+        Your ability to automaitcally increase or decrease your capacity based
+        on the current demand of traffic,memory and computing power
+
+        Horizontal Scaling:
+            Scaling Out: Add more servers of the same size
+            Scaling in: Removing more servers of the same size
+        
+        Vertical Scaling: It is generally hard for traditional architecture so you'll
+        usually only see horizonatal scaling described with Elasticity
+          Ex: If you increase or decrease db then it's chance to loose the data
+
+        How to achive in AZURE?
+            Azure VM Scale Sets:
+                Automatically increase or decrease in response to demand or 
+                defined schedule
+            SQL Server Stretch Database:
+                Dynamically stretch warm and cold transactional data from 
+                Microsoft SQL server 2016 to Microsoft Azure
+
+    d) Hig Durability:
+        Your ability to  recover from a disaster and prevent the loss of data
+        Solutions that recover from a disaster is knowns as Disaster Recovery(DR)
