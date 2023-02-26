@@ -262,3 +262,35 @@
                     d) You limited by our Operating System
                     e) Multiple apps can result in conflicts in resource
                     f) You have a * guarntee of security,privacy and full utility of underlying resource*
+            
+            2) VMs
+                _________________________________________
+                |   ____________          ____________   |
+                |  | ---------  |        | ---------  |  |     
+                |  | | Wasted | |        | | Wasted | |  |
+                |  | |  Space | |        | |  Space | |  |
+                |  | |        | |        | |________| |  |
+                |  |  --------- |        |   _______  |  |
+                |  |   _______  |        |   |APP   | |  |
+                |  |   |APP   | |        |   |______| |  |
+                |  |   |______| |        |   _______  |  |
+                |  |  _________ |        |   |APP   | |  |
+                |  | | Guest Os||        |   |______| |  |
+                |  | |_________||        |  _________ |  |
+                |  |____________|        | | Guest Os||  |
+                |                        | |_________||  |
+                |                        |____________|  |
+                |       VM                   VM          | 
+                | ____________________________________   |
+                | |           Hypervisor             |   |
+                | |__________________________________|   |
+                |  ___________________________________   |
+                | |           Host Operating System   |  |
+                | |___________________________________|  |
+                |________________________________________|
+
+```sequence
+Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!
+```
