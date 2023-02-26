@@ -179,3 +179,32 @@
         Your ability to recover from a failure
     5) Fault Tolerence:
         Your ability to prevent a failure
+
+## Azure Fundamentals
+    a) High Availability:
+        Your ability for ensure service to remain available by ensuring there is
+        *no single point of failure and/or ensure a certain level of performance
+                               
+                                        -----------------------
+                                        |                      |
+                                        |     --------------   |
+                                        |     |vm1     AZ1  |  |
+                                        |      -------------   |
+                                        |                      |
+        --------          ------        |     --------------   |
+        |cloud  | ------->| AZB |------>|     |vm2     AZ2  |  |
+        --------           ------       |     --------------   |
+                                        |                      |
+                                        |     --------------   |
+                                        |     |vm3     AZ3  |  |
+                                        |     --------------   |
+                                        -----------------------
+
+        Azure Load Balancer(AZB):
+            A load balancer allow you to evenly distribute traffic to multiple
+            servers in one or datacenters. If datacenters or servers become unavailble
+            or unhealthy the load balancer will route the traffic to only available
+            datacenters with servers
+        Note:
+            Running your workload across multiple Availablitiy Zones(AZ) ensure that if 1 or 2
+            AZs become unavailble your service / applications remains available
