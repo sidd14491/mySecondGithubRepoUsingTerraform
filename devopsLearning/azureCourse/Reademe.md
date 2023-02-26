@@ -238,6 +238,27 @@
                 Dynamically stretch warm and cold transactional data from 
                 Microsoft SQL server 2016 to Microsoft Azure
 
-    d) Hig Durability:
+    d) High Durability:
         Your ability to  recover from a disaster and prevent the loss of data
         Solutions that recover from a disaster is knowns as Disaster Recovery(DR)
+
+## The Evolution of Computing
+    1) Dedicated Server:
+                                                ============================================
+                                                |        ------------------------           |
+                                                |        |                      |           |
+                                                |        |      Wasted Space    |           |
+                                                |        |                      |           |
+                                                |          ----------------------           |
+                                                |                                           |
+                                                | APP            APP               APP      |
+                                                | ----------------------------------------  |
+                                                |  |            Host Operating System     | |
+                                                |  ---------------------------------------  |
+                                                |===========================================
+                    a) A physical server wholly utilized by a single customer
+                    b) You have to guess your capacity,you'll overpay for an underutilized server
+                    c) Upgrading beyond your capacity will be slow and expensive
+                    d) You limited by our Operating System
+                    e) Multiple apps can result in conflicts in resource
+                    f) You have a * guarntee of security,privacy and full utility of underlying resource*
