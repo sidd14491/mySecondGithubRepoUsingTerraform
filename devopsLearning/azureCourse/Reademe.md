@@ -367,3 +367,21 @@
                    VM only run when there is code to be executed
                 f) Cold starts is a side-effect of this setup--> which means not used for early startup
                    because they come to conclusion of code once the know topo what they are making
+
+## Global Infrastructure 
+    # Regions and Geographies
+        A region is a grouping multiple datacenters(Availability Zones)
+        Azure has 60+ Regions available across 140 countries
+
+        A Geography is discreet market of two or more regions tht preserves data
+        residency and compliance boundaries 
+    
+    # Paired Regions
+        Each region is paired with another region 300 miles away
+        Only one region is updated at a time to ensure no outage
+
+        Some Azure Service rely on Paired Region for Disaster Recovery
+
+        Eg: Azure Geo-redundant Storage(GRS) replicate data to a secondary region
+        automatically,ensuring that data is durable even in the event that primary
+        region isn't recoverable
