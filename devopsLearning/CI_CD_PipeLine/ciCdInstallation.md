@@ -149,16 +149,16 @@
             }
 
 # Create a Job for pipeline in UI:
-   1) Loging to Jenkins UI
-   2) Get POP up for "Create new Jobs" --> click on it
-   3) "Enter an item name" --> Give the job name "sprint-mongo-docker-k8s"
-   4) Select --> Pipeline options --> Ok
-   5) Pipeline job created 
-   6) Click on "Configure" button on right side under "sprint-mongo-docker-k8s" Jobs"
-   7) Click on "Pipeline" tab out of below 4
+    1) Loging to Jenkins UI
+    2) Get POP up for "Create new Jobs" --> click on it
+    3) "Enter an item name" --> Give the job name "sprint-mongo-docker-k8s"
+    4) Select --> Pipeline options --> Ok
+    5) Pipeline job created 
+    6) Click on "Configure" button on right side under "sprint-mongo-docker-k8s"Jobs"
+    7) Click on "Pipeline" tab out of below 4
         General     Build Triggers     Advanced Project Options    Pipeline
    
-   8) Under Pipeline script write stages which follow during runing pipeline
+    8) Under Pipeline script write stages which follow during runing pipeline
         1) Stage for GIT:
                 node{
                     stage("Git Clone") {
