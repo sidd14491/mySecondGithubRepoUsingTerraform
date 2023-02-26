@@ -44,3 +44,35 @@
         # sudo systemctl restart jenkins
 
 # Setup Kubernetes Cluster
+    1) Create 2 ubuntu machines
+        # System Requirements
+            Master Machine: 2 GB RAM, 2 Core Processor
+            Worker Machines: 1 GB RAM, 1 Core Processor
+    2) Execute below commands in both master and slave machines.
+        =============== COMMANDS FOR MASTER & SLAVE START===============
+            sudo apt-get update -y
+            sudo apt-get install -y apt-transport-https
+            sudo su -
+
+            curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+
+            cat <<EOF> /etc/apt/sources.list.d/kubernetes.list
+            deb https://apt.kubernetes.io/kubernetes-xenial main
+            EOF
+            apt-get update -y
+            swapoof -a
+            sed -i '/swap/s/^\(.*\)$/#\1/g' /etc/fstab
+            modprobe br_netfilter
+            sysctl -p
+            sudo sysctl net.bridge.bridge-nf-call-iptables=1
+            apt install docker.io -y
+            usermod -aG docker ubuntu
+            systemctl restar docker
+            systemctl enable docker.service
+            apt-get install -y kubelet kubeadm kubectl kubernetes-cni
+            systemctl daemon-reload
+            systemctl start kubelet
+            systemctl enable kubelet.service
+         =============== COMMANDS FOR MASTER & SLAVE END===============
+
+            
