@@ -35,6 +35,12 @@
                 Copy the password from your terminal,paste it into the Administrator password field and click Continue and install Selected Plugins
 
                 
+# Setting Up Docker in Jenkins Server
+    1) Install Docker
+        # curl -fsSL get.docker.com | /bin/bash
+    2) Add Jenkins User to docker group
+        # sudo usermod -aG docker jenkins
+    3) Restart Jenkins
+        # sudo systemctl restart jenkins
 
-
-
+# Setup Kubernetes Cluster
