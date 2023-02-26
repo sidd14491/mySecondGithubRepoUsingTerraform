@@ -155,17 +155,16 @@
 ## Capital vs Operational Expenditure
     Capital Expenditure(CAPEX)                  Operational Expenditure(OPEX)
  
- Spending money upfront on physical              The costs associated with an on-premise
- infrastructure that expense from your           datacenter that has shifted the cost to the service
- taz bill over time                               provider.The customer only concerned with non-phyiscal  
+     Spending money upfront on physical              The costs associated with an on-premise
+     infrastructure that expense from your           datacenter that has shifted the cost to the service
+     tax  bill over time                               provider.The customer only concerned with non-phyiscal  
                                                   costs
 
-   > Server Costs(computers)                    Leasing software and customizing features
-   > Storage Costs(hard drives)                 Training Employess in Cloud Services
-   > Network Costs(Rtr,Swtch,firewall)          Paying for cloud support
-   > Backup and Archive costs                   Billing based on cloud metrics
-   > Disaster Recovery Costs                          a) compute storage
-   > Datacenter Costs(Rent,Cooling,                   b) storage Usage
+      > Server Costs(computers)                    Leasing software and customizing features
+      > Storage Costs(hard drives)                 Training Employess in Cloud Services
+      > Network Costs(Rtr,Swtch,firewall)          Paying for cloud support
+      > Backup and Archive costs                   Billing based on cloud metrics
+      > Disaster Recovery Costs                          a) compute storage
+      > Datacenter Costs(Rent,Cooling,                   b) storage Usage
                 physical security)
-   > Techincal Personal
-   
+      > Techincal Personal
