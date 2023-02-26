@@ -266,13 +266,13 @@
             2) VMs
                 _________________________________________
                 |   ____________          ____________   |
-                |  | ---------  |        | ---------  |  |     
-                |  | | Wasted | |        | | Wasted | |  |
-                |  | |  Space | |        | |  Space | |  |
-                |  | |        | |        | |________| |  |
-                |  |  --------- |        |   _______  |  |
-                |  |   _______  |        |   |APP   | |  |
-                |  |   |APP   | |        |   |______| |  |
+                |  | ---------  |        | ---------  |  |     a) You can run multiple virtual machine on one machine 
+                |  | | Wasted | |        | | Wasted | |  |     b) Hypervisor is the software layer that lets you the VMs
+                |  | |  Space | |        | |  Space | |  |     c) A Phyiscal server shared by multiple customer
+                |  | |        | |        | |________| |  |     d) You are pay for a fraction of the server
+                |  |  --------- |        |   _______  |  |     e) You'll overpay for an underutilized Virtual Machine
+                |  |   _______  |        |   |APP   | |  |     f) You are limited by your Guest Operating System
+                |  |   |APP   | |        |   |______| |  |     g) Multiple apps on a singl Virtual Machine can result in conflicts in resource sharing
                 |  |   |______| |        |   _______  |  |
                 |  |  _________ |        |   |APP   | |  |
                 |  | | Guest Os||        |   |______| |  |
@@ -289,8 +289,4 @@
                 | |___________________________________|  |
                 |________________________________________|
 
-```sequence
-Alice->Bob: Hello Bob, how are you?
-Note right of Bob: Bob thinks
-Bob-->Alice: I am good thanks!
-```
+                
