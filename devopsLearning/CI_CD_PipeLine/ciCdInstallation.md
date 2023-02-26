@@ -106,7 +106,7 @@
     We can deploy docker appliacations into k8s cluster from Jenkins using below two approaches
     
     1) Using k8s Continous Deploy Plugin
-        a) Go to Jenkins --> Manage Plugings --> Available --> Search for   kubernetes Continous Deploy --> Select And Install
+        a) Go to Jenkins -->Manage Jenkins -->  Manage Plugins --> Available --> Search for   kubernetes Continous Deploy --> Select And Install without restart or with 
  
         b) Add kube config information in Jenkins Credentials
            Jenkins -->Credentials -->Select Kube Config --> copy kubeconfig content from kubernetes cluste
@@ -147,3 +147,60 @@
             stage("Depliy To Kubernetes Cluster"){
                 sh `kubectl apply -f spingBootMongo.yml `
             }
+
+# Create a Job for pipeline in UI:
+   1) Loging to Jenkins UI
+   2) Get POP up for "Create new Jobs" --> click on it
+   3) "Enter an item name" --> Give the job name "sprint-mongo-docker-k8s"
+   4) Select --> Pipeline options --> Ok
+   5) Pipeline job created 
+   6) Click on "Configure" button on right side under "sprint-mongo-docker-k8s" Jobs"
+   7) Click on "Pipeline" tab out of below 4
+        General     Build Triggers     Advanced Project Options    Pipeline
+   
+   8) Under Pipeline script write stages which follow during runing pipeline
+        1) Stage for GIT
+                node{
+                    stage("Git Clone") {
+                        <copy the contend of d)>
+                    }
+
+                }
+                For configuring or integrating GIT with jenkins click on syntax after write it down above groovy script
+                
+                It'll redirect to "sprint-mongo-docker-k8s" --> Pipeline Syntax page
+                Select "Git" options under "Steps" --> "Sample Step:"
+                    Provide info under below tab:
+                    a) Repository URL: <git_code_url>
+                    b) Branch <select_branch>
+                    c) Credentials: click on Add and select --> Jenkins  
+                            provide username and password of GIT in Jenkins
+                            and give ID name --> it act as variable
+                    d) Click on "Generate Pipeline Script", copy it and add it under stage of "Git Clone"
+    
+        2) Next stage configure "maven" 
+            If "maven" not installed 
+            steps:
+                Select -->Jenkins(top tab left side) ---> Manage Jenkins ---> Global Tool Configuration --> Scroll down and click on "Maven" and click on Add Maven and give version under "Name"
+            node{
+                stage("Git Clone") {
+                    <copy the contend of d)>
+                }
+                stage("Mave Clean Build"){
+                    def mavenHome = tool name: "Maven-3.6.1", type:"maven"
+                    def mavenCMD = "${mavenHome}/bin/mvn"
+                    sh "${mavenCMD} clean package"
+                    }
+            }
+        3) Next stage for build a docker image
+            stage("Build Docker Image"){
+                sh "docker build -t <Image Tag Name> ."
+            }
+        4) Next Stage to push the docker image in Docker HUB
+            stage("Docker Push"){
+                sh "docker login -u <username> -p"
+                sh "docker push <Docker Image Tag Name>
+            }
+            password will configure in Credential how will do for GIT 
+            Select "withCredentials: Bind credentials to variables" options 
+            under Sample step dropdown
