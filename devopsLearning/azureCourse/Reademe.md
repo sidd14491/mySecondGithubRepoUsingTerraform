@@ -289,4 +289,81 @@
                 | |___________________________________|  |
                 |________________________________________|
 
-                
+            
+            3) Contaier
+                    _________________________________________
+                    |   ______________     ______________   |
+                    |  |   _________  |    |   _________  | |
+                    |  |   |  App   | |    |   | Avail  | | |    
+                    |  |   | _______| |    |   |  able  | | | 
+                    |  |   _________  |    |   |  Space | | |  
+                    |  |   |  App   | |    |   |        | | |
+                    |  |   | _______| |    |   | _______| | |
+                    |  |   _________  |    |   _________  | |
+                    |  |   |  App   | |    |   |  App   | | |
+                    |  |   | _______| |    |   | _______| | |
+                    |  |   _________  |    |   _________  | |
+                    |  |   | docker | |    |   | docker | | |
+                    |  |   |  daemon| |    |   |  daemon| | |
+                    |  |   |________| |    |   |________| | |
+                    |  |   __________ |    |   __________ | |
+                    |  |   | Guest Os||    |   | Guest Os|| |
+                    |  |   |_________||    |   |_________|| |
+                    |  |______________|    |______________| |
+                    |                                       |
+                    |      VM                  VM           |
+                    | ____________________________________  |
+                    | |           Hypervisor             |  |
+                    | |__________________________________|  |
+                    |  ___________________________________  |
+                    | |           Host Operating System   | |
+                    | |___________________________________| |
+                    |_______________________________________|
+
+                    a) Virtual Machine running multiple containers
+                    b) Docker Deamon is the name of the software layer that lets
+                       you run multiple container
+                    c) You can maximum the utilize the available capactit which is more cost-effective
+                    d) Your containers share the same underlying OS so containers are more efficent than multiple VMs
+                    e) Multiple apps can run side by side without being limited to the same os 
+                       requiremens and will not cause conflicts during resource sharing  
+                    Note: We can use rkt,podman,lxc etc instead of docker to manage container
+
+            4) Function:
+                    _________________________________________
+                    |   ______________     ______________   |
+                    |  |   _________  |    |   _________  | |
+                    |  |   |f f f f | |    |   | Avail  | | |    
+                    |  |   | _______| |    |   |  able  | | | 
+                    |  |   _________  |    |   |  Space | | |  
+                    |  |   |f f f   | |    |   |        | | |
+                    |  |   | _______| |    |   | _______| | |
+                    |  |   _________  |    |   _________  | |
+                    |  |   |  f f   | |    |   |  f f f | | |
+                    |  |   | _______| |    |   | _______| | |
+                    |  |   _________  |    |   _________  | |
+                    |  |   | docker | |    |   | docker | | |
+                    |  |   |  daemon| |    |   |  daemon| | |
+                    |  |   |________| |    |   |________| | |
+                    |  |   __________ |    |   __________ | |
+                    |  |   | Guest Os||    |   | Guest Os|| |
+                    |  |   |_________||    |   |_________|| |
+                    |  |______________|    |______________| |
+                    |                                       |
+                    |      VM                  VM           |
+                    | ____________________________________  |
+                    | |           Hypervisor             |  |
+                    | |__________________________________|  |
+                    |  ___________________________________  |
+                    | |           Host Operating System   | |
+                    | |___________________________________| |
+                    |_______________________________________|
+
+                a) A managed VMs running managed containers.
+                b) Knowns as Serverless Compute like : Lambda function in AWS
+                c) you upload a piece of code choose the amount of memory and duration
+                d) Only responsible for code and data,nothing else
+                e) Very cost-effection,only pay for the time code is running,
+                   VM only run when there is code to be executed
+                f) Cold starts is a side-effect of this setup--> which means not used for early startup
+                   because they come to conclusion of code once the know topo what they are making
