@@ -96,5 +96,54 @@
 
             ================== In Master Node END ===============
 
+    4) Execute kubeadm join token in worker nodes to join into cluster.
+        ==================In Worker Node Start================
+        
+        copy kubeadm join token and execute in Worker Nodes to join to cluster
+        sudo kubeadm join 172.31.44.30:6443 --token <token_val> --discover-token-ca-cer-has sha256:<val>
 
+# Setup Jenkins Server to deploy applications into K8s Cluster
+    We can deploy docker appliacations into k8s cluster from Jenkins using below two approaches
+    
+    1) Using k8s Continous Deploy Plugin
+        a) Go to Jenkins --> Manage Plugings --> Available --> Search for   kubernetes Continous Deploy --> Select And Install
+ 
+        b) Add kube config information in Jenkins Credentials
+           Jenkins -->Credentials -->Select Kube Config --> copy kubeconfig content from kubernetes cluste
+        
+        c) Use kubernetes Deploy in pipeline Script
+           Ex:
+            stage("Deploy To Kubernetes Cluster"){
+                KubernetesDeploy(
+                    configs:'spingBootMongo.yml',
+                    kubeconfigId:'KUBERNETES_CONFFIG',
+                    enableCOnfigSubstitution:true
+                )
+            }
+    2) Install kubectl and add kubeconfig in Jenikins server
+        a) Install kubectl in jenkins Server
             
+            sudo apt-get update -y
+            sudo apt-get install -y apt-transport-https
+            sudo su -
+
+            curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+
+            cat <<EOF> /etc/apt/sources.list.d/kubernetes.list
+            deb https://apt.kubernetes.io/kubernetes-xenial main
+            EOF
+            apt-get update -y
+            sudo apt-get install -y kubectl
+        
+        b) Switch to Jenkins user
+            sudo -i -u jenkinns
+        c) Create .kube folder in Jenkins home directory
+            cd ~
+            mkdir .kube
+        d) Create config file and copy config file content from k8s cluster master machine and save the content
+            vim ~/.kube/config
+        
+        e) We can use kubectl command commands directly in pipe line script, kubectl commands will get ececuted in k8s cluster diectly
+            stage("Depliy To Kubernetes Cluster"){
+                sh `kubectl apply -f spingBootMongo.yml `
+            }
