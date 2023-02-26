@@ -167,3 +167,15 @@
       > Datacenter Costs(Rent,Cooling,    |               b) storage Usage
                 physical security)        |
       > Techincal Personal                |
+
+## Cloud Architecture Terminology
+    1) Availability: 
+        Your ability to ensure a service remains available(HA)
+    2) Scalability:
+        Your responsbility to grow rapidly or unimpeded(unblocked)
+    3) Elasticity:
+        Your ability to shrink and grow to meet the demand
+    4) Disaster Recovery:
+        Your ability to recover from a failure
+    5) Fault Tolerence:
+        Your ability to prevent a failure
