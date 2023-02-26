@@ -159,12 +159,11 @@
         General     Build Triggers     Advanced Project Options    Pipeline
    
    8) Under Pipeline script write stages which follow during runing pipeline
-        1) Stage for GIT
+        1) Stage for GIT:
                 node{
                     stage("Git Clone") {
                         <copy the contend of d)>
                     }
-
                 }
                 For configuring or integrating GIT with jenkins click on syntax after write it down above groovy script
                 
