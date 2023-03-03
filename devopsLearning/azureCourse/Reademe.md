@@ -385,3 +385,10 @@
         Eg: Azure Geo-redundant Storage(GRS) replicate data to a secondary region
         automatically,ensuring that data is durable even in the event that primary
         region isn't recoverable
+    
+        Example:
+            canada          Canada Central           Canada East
+            North America   East US                  West US
+            Germany         Germany Central          Germany NorthEast
+
+    
