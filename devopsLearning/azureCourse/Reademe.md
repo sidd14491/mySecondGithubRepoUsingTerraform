@@ -391,4 +391,9 @@
             North America   East US                  West US
             Germany         Germany Central          Germany NorthEast
 
+    # Not all Azure cloud services are available in every regions
+                Recommended region                              Alternate region
+        A region that provide the broadest range of
+        capabilites and is desgined to support Availability
+        zones now, or in the future
     
