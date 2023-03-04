@@ -384,6 +384,7 @@
 
         Eg: Azure Geo-redundant Storage(GRS) replicate data to a secondary region
         automatically,ensuring that data is durable even in the event that primary
+<<<<<<< Updated upstream
         region isn't recoverable
     
         Example:
@@ -397,3 +398,35 @@
         capabilites and is desgined to support Availability
         zones now, or in the future
     
+=======
+        region isn't recoverable.
+        
+        Examples of paired region:
+            Canada              Canada Central          Canada East
+            North America       East US                 West US
+            Germany             Germany Central         Germany Northeast
+    
+    # Region Types and Service Availability
+
+            Recommended Region                          Alternate(other) Region
+        A region that provides the broadest         A region that extends Azure footprint within
+        range of service capabilites and is         a data residency boundary where a recomended region
+        designed to support Availability Zones      also exist.Not designed to support AZ.
+        now, or in the future.                      These Regions are label as Other in the Azure portal
+
+        General Availability(GA) is when a service is considered ready to be used publicily
+        everyone.
+
+        Azure Cloud service are grouped into threee categories:
+        Their categories determine when cloud service become available:
+            
+            1) Foundational: When GA,immediately or in 12 months in Recommended and Alternate Region
+
+            2) Mainstream: When GA immediately or in 12 months in Recommended Regions
+                           May become available in Alternate Regions based on customer demand
+
+            3) Specialized: Available in Recommended or Alternate Region based on customer demand 
+
+    # Special Regions:
+        Azure has sepcialized region to meet compliance or legal reasons
+>>>>>>> Stashed changes
