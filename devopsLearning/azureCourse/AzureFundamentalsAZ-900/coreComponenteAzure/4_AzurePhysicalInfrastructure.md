@@ -36,7 +36,7 @@
     independent power,coolinig and networking. An availability azone is set up to be an
     isolated boundary. If one zone goes down, the othe continues working. Availablity zones are connected through high-speed,provae fiber-optic networks.
              
-  ![Alt Text](Images/availability-zones-c22f95a3.png)
+  ![Availability Azone](Images/availability-zones-c22f95a3.png)
  
    ### Use availability zones in your apps
         You want to ensure your services and data are redundant,so you can protect your 
@@ -60,3 +60,18 @@
             3) Non-regional services: Services are always available from Azure geographies and are resilient
                to zone-wide outage as wellas region-wide outages
 
+## Region Pairs
+    Most Azure regions are paired with another regions within the same geography(such as US,Europe
+    or Asia) at least 300 miles away. This approach allows for the replication of resources
+    across a geography thatt helps reduce the likelihood of 
+    interuptions because of events such as natural disasters,civil unrest,power outrage or 
+    physical network outages that affect an enitre region.For exmaple, if a region in a pair
+    was affected by a natural disaster,services would automatically foail over to other region
+    in its region pair
+
+  **Important**
+    Not all Azure services automatically replicate data or automaticaly fall back from failed
+    region to cross-replicate to another enabled region.In these scnarioes,reovery and replication
+    must be configured by the customer.
+
+ ![Region pair](Images/region-pairs-7c495a33.png)
