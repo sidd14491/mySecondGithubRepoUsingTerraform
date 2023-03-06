@@ -49,3 +49,14 @@
         co-locating your compute,storage,networking and data resources within 
         an availability zone and replicating in other availibility zones.
 
+        Availability zones are primarily for VMs, managed disks,load balancers and SQL database.
+        Azure services that support availability zones fall into three categories
+            
+            1) Zone serivces: You pin the resource to a specific zone(for example,VMs,managed disk
+                IP addresses)
+            2) Zone-redudndant services: The platform replicates automatically across zones(for-exmpe
+               zone-redundant storage, SQL database)
+            
+            3) Non-regional services: Services are always available from Azure geographies and are resilient
+               to zone-wide outage as wellas region-wide outages
+
