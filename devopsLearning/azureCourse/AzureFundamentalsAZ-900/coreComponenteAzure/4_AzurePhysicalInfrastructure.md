@@ -39,9 +39,8 @@
   ![Alt Text](Images/availability-zones-c22f95a3.png)
  
    ### Use availability zones in your apps
-        You want to ensure your services and data are redundant
-        so you can protect your information in case of failure.
-        When you host your infrastructure,setting up your own 
+        You want to ensure your services and data are redundant,so you can protect your 
+        information in case of failure.When you host your infrastructure,setting up your own 
         redundancyrequires that you create duplicate hardware enviornments.
         Azure can help make your app highly available through availability zones.
 
