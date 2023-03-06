@@ -75,3 +75,12 @@
     must be configured by the customer.
 
  ![Region pair](Images/region-pairs-7c495a33.png)
+
+ ## Sovereign Regions
+    In addtion to regular regions,Azure also has sovereign regions.Sovereign regions are instances
+    of azure that isolated from the main instance of Azure.You may need to use a sovereign region
+    for comliance of legal purpose
+
+    Azure sovereign regions include:
+        1) US DoD central,US gove Iowa and more
+        2) China East,China North and more
