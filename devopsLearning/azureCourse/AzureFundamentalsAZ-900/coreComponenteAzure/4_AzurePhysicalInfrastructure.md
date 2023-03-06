@@ -31,7 +31,9 @@
         Azure Active Directory ,Azure Traffic Manager and Azure DNS
 
 # Availability Zones
-    Availability zones are physically separate datacenters within an Azure region.Each avialability zone is made up of one or more datacenters equipped with independent power,coolinig and networking. An availability azone is set up to be an
+    Availability zones are physically separate datacenters within an Azure region.
+    Each avialability zone is made up of one or more datacenters equipped with
+    independent power,coolinig and networking. An availability azone is set up to be an
     isolated boundary. If one zone goes down, the othe continues working. Availablity zones are connected through high-speed,provae fiber-optic networks.
              
 ![Alt Text](Images/availability-zones-c22f95a3.png)
