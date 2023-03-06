@@ -36,4 +36,9 @@
     independent power,coolinig and networking. An availability azone is set up to be an
     isolated boundary. If one zone goes down, the othe continues working. Availablity zones are connected through high-speed,provae fiber-optic networks.
              
-![Alt Text](Images/availability-zones-c22f95a3.png)
+  ![Alt Text](Images/availability-zones-c22f95a3.png)
+ 
+   # Use availability zones in your apps
+        You want to ensure your services and data are redundant so you can protect your information
+        in case of failure. 
+
