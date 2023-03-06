@@ -37,4 +37,4 @@
         - Get credit of $ 100 
 
 # What is the Mircosoft Learn sandbox?
-    Many of the Learn exercise use a technology called the sandbox, which creates a temporary subscription that's add to your 
+    Many of the Learn exercise use a technology called the sandbox, which creates a temporary subscription that's add to your Azure Account.
